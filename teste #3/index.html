@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>1 2 3 testando</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <nav class="container-nav">
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            <div id="itens" class="menu">
+                <ul>
+                    <a href="#"><li>inicio</li></a>
+                    <a href="#"><li>parte</li></a>
+                    <a href="#"><li>final</li></a>
+                </ul> 
+            </div> 
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+        </nav>
+    </header>
+    <script>
+        function mudoutamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = "block"
+            } else {
+                itens.style.display = "none"
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = "none"
+            } else {
+                itens.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>

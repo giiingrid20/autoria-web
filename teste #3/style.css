@@ -1,0 +1,57 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container-nav {
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo > img {
+    height: 75px;
+    padding: 10px;
+}
+
+#burguer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu {
+    display: none;
+    font-size: 20px;
+}
+.menu > ul {
+    list-style-type: none;
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.menu > ul > a:link {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
