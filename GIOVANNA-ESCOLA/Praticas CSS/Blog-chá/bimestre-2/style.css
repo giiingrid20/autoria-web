@@ -28,13 +28,18 @@ body {
     color: gray;
 }
 
+.nomes_menu {
+    margin-right: 10px;
+}
+
+
 main {
     background-color: black;
     max-width: 1200px;
     margin: auto;
 }
 
-.parte > div {
+.parte1 > div {
     background-image: url('resources/img-mission-background.webp');
     height: 800px;
     max-width: 1000px;
@@ -42,10 +47,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.parte > div > h1 {
     background-color: black;
-    max-width: 1000px;
-    color: white;
 }
+   
