@@ -3,6 +3,7 @@ header {
     margin: auto;
     position: sticky;
     top: 0;
+    z-index: 3;
 }
 .container-menu {
     display: flex;
@@ -11,6 +12,7 @@ header {
     width: 429px;
     height: 37px;
     margin: auto;
+    background-color: white;
 }
 
 .h1-navbar {
@@ -23,7 +25,7 @@ header {
 }
 
 .instagram-perfil {
-    width: 470px;
+    width: 474px;
     height: 930px;
     margin: auto;
 }
@@ -50,6 +52,7 @@ header {
 .parte1 {
     display: flex;
     justify-content: space-around;
+    padding-top: 30px;
 }
 
 .dadosParte1{
@@ -82,22 +85,22 @@ header {
 .editarPerfil{
     display: flex;
     border-radius: 10px;
-    margin: 2px;
+    margin-right: 5px;
     background-color: #D9D9D9;
     width: 190px;
     height: 40px;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center;
     align-items: center;
 }
 
 .compartilharPerfil{
     display: flex;
     border-radius: 10px;
-    margin: 2px;
+    margin-right: 5px;
     background-color: #D9D9D9;
     width: 190px;
     height: 40px;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center;
     align-items: center;
 }
 
@@ -108,16 +111,37 @@ header {
     border-radius: 10px;
 }
 
-.parte1destaques {
+.partedestaques {
     display: flex;
+    width: 474px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 25px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    overflow-x: visible;
+}
+.partedestaques > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 20px;
     
 }
-
-.parte1destaques > div > img {
+.partedestaques > div > img {
     border-radius: 100%;
     height: 78px;
     width: 78px;  
-    margin-right: 20px;
+    margin-top: 30px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: auto;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 
