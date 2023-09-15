@@ -1,3 +1,6 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
 header {
     width: 470px;
     margin: auto;
@@ -14,6 +17,7 @@ header {
     margin: auto;
     background-color: white;
 }
+
 
 .h1-navbar {
     display: flex;
@@ -113,13 +117,14 @@ header {
 
 .partedestaques {
     display: flex;
-    width: 474px;
+    width: 450px;
     height: 150px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 25px;
     overflow: auto;
     scroll-snap-type: x mandatory;
     overflow-x: visible;
+    
 }
 .partedestaques > div {
     display: flex;
@@ -142,28 +147,41 @@ header {
     display: none;
 }
 
-.buttonNavegation {
-    display: flex;
+.buttonSeçoes {
+    width: 340px;
+    height: 24px;
     margin: auto;
+}
+
+.ButtonNavegation > div > img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.ButtonNavegation > div > i {
     width: 24px;
     height: 24px;
+}
+
+.buttonSeçoes > div {
+    display: flex;
     justify-content: space-around;
-}
-
-.buttonSeçoes > .buttonNavegation > div {
-    background-color: #D9D9D9;;
 
 }
+
 
 .gradePhotos {
     display: flex;
     flex-wrap: wrap;
     margin-left: 4px;
+    margin-bottom: 10px;
 }
-.gradePhotos > div > img{
+
+.gradePhotos > img{
     width: 155px;
     height: 155px;
-    flex-shrink: 0;
+    margin: 0.5px;
 }
 
 footer {
@@ -180,3 +198,6 @@ footer > div{
     display: flex;
     align-items: center;
 }
+
+
+/*falta todos os buttons*/
