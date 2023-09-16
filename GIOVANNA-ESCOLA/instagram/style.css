@@ -1,6 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif
 }
+main {
+    margin-bottom: 0px;
+}
 header {
     width: 470px;
     margin: auto;
@@ -30,7 +33,7 @@ header {
 
 .instagram-perfil {
     width: 474px;
-    height: 930px;
+    height: 875px;
     margin: auto;
 }
 
@@ -39,7 +42,10 @@ header {
     height: 104px;
     width: 104px;
     position: absolute;
-   
+    border: 1px solid rgb(0, 236, 20);
+    overflow: hidden;
+    padding: 1.5px;
+    
 }
 
 #buttonPerfil {
@@ -49,7 +55,7 @@ header {
     font-size: 15px;
     position: relative;
     top: 80px;
-    left: 80px;
+    left: 85px;
     z-index: 2;
 }
 
@@ -67,14 +73,16 @@ header {
     margin-left: 80px;
 }
 
-.dadosParte1 > div > p{
-    text-align: center;
-    margin-top: 2px;
-   
+.perfilnome {
+    margin-left: 30px;
+  
 }
 
 .dadosParte1 > div {
-   margin: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .buttonPerfil {
@@ -82,8 +90,8 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    font-family: Inter;
     font-size: 14px;
+    margin-top: 0%;
 }
 
 .editarPerfil{
@@ -131,9 +139,9 @@ header {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-right: 20px;
-    
+    margin-right: 20px;   
 }
+
 .partedestaques > div > img {
     border-radius: 100%;
     height: 78px;
@@ -170,12 +178,10 @@ header {
 
 }
 
-
 .gradePhotos {
     display: flex;
     flex-wrap: wrap;
     margin-left: 4px;
-    margin-bottom: 10px;
 }
 
 .gradePhotos > img{
@@ -185,18 +191,25 @@ header {
 }
 
 footer {
-    display: flex;
     position: sticky;
     bottom: 0;
     background-color: white;
     margin: auto;
-    width: 470px;
+    width: 469px;
     height: 68px;
 }
 
 footer > div{
     display: flex;
+    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.footerdiv > div > img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
 }
 
 
