@@ -143,7 +143,6 @@ header {
     color: #E55E82;
 }
 
-
 footer{
     margin: auto;
     display: flex;
@@ -176,6 +175,7 @@ footer > img{
 
 
 .imagemadm{
+    margin: auto;
     background-image: url('imagens/mensagemFornecedor01.png');
     max-width: 1440px;
     height: 450px;
@@ -208,11 +208,123 @@ footer > img{
         background-image: url('imagens/imagemPequenaCelular.png');
     }
 }
+@media only screen and (max-width: 420px){ 
+    .imagemadm{
+        background-image: url('imagens/imagemPequenaFornecedor04.png');
+    }
+}
 
 /*Aqui irei modelar a parte do encontrar por categoria*/
 /*container pai*/
 
-.produtosCadastrados{
+.categoria {
+    max-width: 100%;
+    width: 1440px;
+    height: 350px;
+}
+
+.cards_Produtos_para_vender {
+    max-width: 1300px;
+    max-height: 11300px;
+    margin: 42px 70px 42px 70px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+/*Card do produto*/
+.card_produto {
+    height: 520px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease;
+    margin: 10px;
+    border: 1px solid rgba(174, 174, 174, 0.521);
+    border-radius: 10px;
+
+}
+
+/*container filho de card do produto que guarda img, nome e valor*/
+.dados_do_produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.dados_do_produto > img {
+    height: 250px;
+    width: 250px;
+}
+.dados_do_produto p {
+    font-size: 25px;
+    color: #E55E82;
+}
+
+/*container filho de card do produto que guarda forms de quantidade, botao carrinho e botao comprar*/
+.interaçoes_card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.interaçao_carrinho {
+    display: flex;
+    justify-content: space-around;
+}
+.interaçao_carrinho > input {
+    height: 50px;
+    width: 150px;
+    border: 1px solid #AEAEAE;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 5px;
+
+}
+.interaçao_carrinho > button {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #F9A8C8;
+    border: none;
+}
+.interaçao_carrinho > button {
+    color: #E55E82;
+    font-size: 30px;
+    border: none;
+}
+
+.produtos_para_vender{
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+.botao_comprar{
+    display: flex;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #F9A8C8;
+    border: none;
+}
+
+.botao_comprar > input{
+    text-decoration: none;
+}
+
+.dados_do_produto > h4{
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+
+@media only screen and (max-width: 420px){ 
+    .dados_do_produto > h4{
+        font-size: 13px;
+    }
 }
