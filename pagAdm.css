@@ -208,3 +208,11 @@ footer > img{
         background-image: url('imagens/imagemPequenaCelular.png');
     }
 }
+
+/*Aqui irei modelar a parte do encontrar por categoria*/
+/*container pai*/
+
+.produtosCadastrados{
+    display: flex;
+    justify-content: center;
+}
